@@ -20,10 +20,22 @@ if (username=="eric"&&password=="1234")
 
 {
 
-    cout<<"Login Successfull";
+    cout<<"Login Successfull: ";
+    cout<<"Welcome Eric";
+}
+
+else if (username=="admin"&&password=="1234")
+{
+    cout<<"Login Successfull: ";
+    cout<<"Welcome Admin";
 }
 
 else {cout<<"Illegal Login";}
+
+
+
+
+
     
 
 
