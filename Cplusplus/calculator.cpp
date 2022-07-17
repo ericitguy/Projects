@@ -15,6 +15,9 @@ int main()
    
    cout<<"Please enter the Operator: ";
    cin>>op;
+
+   cout<<"Please enter the value of the second number: ";
+   cin>>input2;
    
    if(op=="+"){
 	   solution = input1 + input2;
@@ -33,10 +36,7 @@ int main()
 	   {
 		   solution = input1 - input2;
 	   }
-	   else if (op == "%")
-	   {
-		   solution = input1 % input2;
-	   }
-   
+	
+   cout << solution << endl;
     return 0;
 }
