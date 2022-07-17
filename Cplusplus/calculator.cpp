@@ -9,7 +9,8 @@ int main()
    double input2 = 0.0;
    string op ="";
    double solution = 0.0;
-   
+
+   //Accepting User Input
    cout<<"Please enter the value of the first number: ";
    cin>>input1;
    
@@ -19,6 +20,7 @@ int main()
    cout<<"Please enter the value of the second number: ";
    cin>>input2;
    
+   //Condition for operators
    if(op=="+"){
 	   solution = input1 + input2;
 	   
@@ -36,7 +38,10 @@ int main()
 	   {
 		   solution = input1 - input2;
 	   }
+    else {
+        cout<<"ERROR Invalid Operator"
+    }
 	
-   cout << solution << endl;
+   cout << "The solution is : " <<solution << endl;
     return 0;
 }
