@@ -1,11 +1,22 @@
 #include <iostream>;
 #include <string>;
 using namespace std;
-
+void login();
 int main() 
 {
 
-    //Declaration of variables 
+    
+
+   login();
+
+    return 0;
+}
+
+void login()
+
+{
+
+ //Declaration of variables 
     string username;
     string password;
 
@@ -33,15 +44,4 @@ else if (username=="admin"&&password=="1234")
 else {cout<<"Illegal Login";}
 
 
-
-
-
-    
-
-
-
-
-
-
-    return 0;
 }
