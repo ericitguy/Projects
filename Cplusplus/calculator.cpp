@@ -41,6 +41,8 @@ int main()
     else {
         cout<<"ERROR Invalid Operator"
     }
+
+    //Display the solution
 	
    cout << "The solution is : " <<solution << endl;
     return 0;
