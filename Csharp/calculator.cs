@@ -9,11 +9,11 @@ namespace HelloWorld
 	{
 		public static void Main(string[] args)
 		{
-			//Declaration of variables
+			  //Declaration of variables
             double input1;
             double input2;
             string op;
-            double solution;
+            double solution =0.0;
 
 
             Console.WriteLine("Please enter the first number");
@@ -25,32 +25,37 @@ namespace HelloWorld
             Console.WriteLine("Please enter the second number");
             input2 = Convert.ToDouble(Console.ReadLine());
 
-            if(op=="+")
-            { solution = input1 + input2;}
-            else if (op=="-")
-            (
+            if (op == "+")
+            { solution = input1 + input2; }
+            else if (op == "-")
+            {
                 solution = input1 - input2;
 
-            )
-            else if (op=="*")
+            }
+            else if (op == "*")
             {
                 solution = input1 * input2;
 
             }
-            else if (op=="/")
+            else if (op == "/")
             {
                 solution = input1 / input2;
             }
-            else if (op=="%")
-            {solution = input1 % input2;
-                }
+            else if (op == "%")
+            {
+                solution = input1 % input2;
+            }
 
-                else {
+            else
+            {
 
-                    Console.WriteLine("You entered wrong operator");
-                }
+                Console.WriteLine("You entered wrong operator");
+            }
 
-            Console.WriteLine("The Solution is: "+ solution);
+            Console.Write("The Solution is: ");
+            Console.Write(Convert.ToString(solution));
+
+            Console.ReadLine();
             
 		}
 	}
