@@ -26,11 +26,7 @@ namespace HelloWorld
             input2 = Convert.ToDouble(Console.ReadLine());
 
             if(op=="+")
-            {
-                solution = input1 + input2;
-                
-
-            }
+            { solution = input1 + input2;}
             else if (op=="-")
             (
                 solution = input1 - input2;
@@ -54,7 +50,7 @@ namespace HelloWorld
                     Console.WriteLine("You entered wrong operator");
                 }
 
-            Console.WriteLine(solution);
+            Console.WriteLine("The Solution is: "+ solution);
             
 		}
 	}
