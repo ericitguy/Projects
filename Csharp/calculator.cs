@@ -16,6 +16,7 @@ namespace HelloWorld
             double solution =0.0;
 
 
+//Accepting of user iinput and storing in variables
             Console.WriteLine("Please enter the first number");
             input1 = Convert.ToDouble(Console.ReadLine());
 
@@ -24,6 +25,8 @@ namespace HelloWorld
 
             Console.WriteLine("Please enter the second number");
             input2 = Convert.ToDouble(Console.ReadLine());
+
+            //if statement for operator
 
             if (op == "+")
             { solution = input1 + input2; }
@@ -51,6 +54,8 @@ namespace HelloWorld
 
                 Console.WriteLine("You entered wrong operator");
             }
+
+            //Display the solution
 
             Console.Write("The Solution is: ");
             Console.Write(Convert.ToString(solution));
