@@ -12,16 +12,47 @@ namespace HelloWorld
 			//Declaration of variables
             double input1;
             double input2;
+            string op;
             double solution;
 
 
             Console.WriteLine("Please enter the first number");
-            input1 = Convert.ToInt32(Console.ReadLine());
+            input1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Please enter the Operator");
+            op = Console.ReadLine();
 
             Console.WriteLine("Please enter the second number");
-            input2 = Convert.ToInt32(Console.ReadLine());
+            input2 = Convert.ToDouble(Console.ReadLine());
 
-            solution = input1 + input2;
+            if(op=="+")
+            {
+                solution = input1 + input2;
+                
+
+            }
+            else if (op=="-")
+            (
+                solution = input1 - input2;
+
+            )
+            else if (op=="*")
+            {
+                solution = input1 * input2;
+
+            }
+            else if (op=="/")
+            {
+                solution = input1 / input2;
+            }
+            else if (op=="%")
+            {solution = input1 % input2;
+                }
+
+                else {
+
+                    Console.WriteLine("You entered wrong operator");
+                }
 
             Console.WriteLine(solution);
             
